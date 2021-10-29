@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html { height: 100%; }
+body {height: 100%}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 18px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+  display: flex;
+
+  border-radius: 25px;
+  margin-top: 10px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #e5e6e5;
+}
+
+ul li:hover {
+  background: rgba(148, 202, 224, 0.664);
+  color:black;
+}
+
+ul li.checked {
+  background: #276678;
+  color: #fff;
+  text-decoration:line-through;
+}
+
+
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #7aacb8f3;
+  color: white;
+
+}
+
+.liheight{
+  overflow:auto; max-height: 500px; 
+
+}
+
+@media only screen and (max-height: 700px) {
+  .liheight{
+    overflow:auto; height: 200px; 
+  
+  }
+}
+
+@media only screen and (min-height: 701px) {
+  .liheight{
+    overflow:auto;height: 300px; 
+  
+  }
+}
+
+@media only screen and (min-height: 1000px) {
+  .liheight{
+    overflow:auto; height: 500px; 
+  
+  }
+}
+
+
+.bg{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSllkQ4HzppplTfv4bM0W4TBC3V8tFylPHrcA&usqp=CAU');
+  background-size: cover;
+  height: 100%;
+}
+
+.header {
+ color: white;
+  text-align: center;
+}
+
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.ara{
+  border: 1px solid black; width: 100%;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+
+.button {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.button:hover {
+  background-color: #bbb;
+}
